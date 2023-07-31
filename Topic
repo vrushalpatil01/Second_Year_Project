@@ -1,1 +1,72 @@
 File encryption using hashing techniques.
+TITLE: Data security using hashing.
+Here is a brief information on hashing applications so that you can get a good idea of what is hashing used for.
+n this article, we will be discussing of applications of hashing.
+
+Introduction:
+Database indexing: Hashing is used to index and retrieve data efficiently in databases and other data storage systems.
+Password storage: Hashing is used to store passwords securely by applying a hash function to the password and storing the hashed result, rather than the plain text password.
+Data compression: Hashing is used in data compression algorithms, such as the Huffman coding algorithm, to encode data efficiently.
+Search algorithms: Hashing is used to implement search algorithms, such as hash tables and bloom filters, for fast lookups and queries.
+Cryptography: Hashing is used in cryptography to generate digital signatures, message authentication codes (MACs), and key derivation functions.
+Load balancing: Hashing is used in load-balancing algorithms, such as consistent hashing, to distribute requests to servers in a network.
+Blockchain: Hashing is used in blockchain technology, such as the proof-of-work algorithm, to secure the integrity and consensus of the blockchain.
+Image processing: Hashing is used in image processing applications, such as perceptual hashing, to detect and prevent image duplicates and modifications.
+File comparison: Hashing is used in file comparison algorithms, such as the MD5 and SHA-1 hash functions, to compare and verify the integrity of files.
+Fraud detection: Hashing is used in fraud detection and cybersecurity applications, such as intrusion detection and antivirus software, to detect and prevent malicious activities.
+Hashing provides constant time search, insert and delete operations on average. This is why hashing is one of the most used data structure, example problems are, distinct elements, counting frequencies of items, finding duplicates, etc. 
+
+There are many other applications of hashing, including modern-day cryptography hash functions. Some of these applications are listed below: 
+
+Message Digest
+Password Verification
+Data Structures(Programming Languages)
+Compiler Operation
+Rabin-Karp Algorithm
+Linking File name and path together
+Game Boards
+Graphics
+Let us see them one by one in detail:
+
+Message Digest: 
+
+This is an application of cryptographic Hash Functions. Cryptographic hash functions are the functions which produce an output from which reaching the input is close to impossible. This property of hash functions is called irreversibility. 
+
+Password Verification: Cryptographic hash functions are very commonly used in password verification. 
+
+Let’s understand this using an Example: 
+
+When you use any online website which requires a user login, you enter your E-mail and password to authenticate that the account you are trying to use belongs to you. When the password is entered, a hash of the password is computed which is then sent to the server for verification of the password. The passwords stored on the server are actually computed hash values of the original passwords. This is done to ensure that when the password is sent from client to server, no sniffing is there. 
+
+Data Structures(Programming Languages): 
+
+Various programming languages have hash table based Data Structures. The basic idea is to create a key-value pair where key is supposed to be a unique value, whereas value can be same for different keys. This implementation is seen in unordered_set & unordered_map in C++, HashSet & HashMap in java, dict in python etc. 
+
+Compiler Operation: 
+
+The keywords of a programming language are processed differently than other identifiers. To differentiate between the keywords of a programming language(if, else, for, return etc.) and other identifiers and to successfully compile the program, the compiler stores all these keywords in a set which is implemented using a hash table. 
+
+Rabin-Karp Algorithm: 
+
+One of the most famous applications of hashing is the Rabin-Karp algorithm. This is basically a string-searching algorithm which uses hashing to find any one set of patterns in a string. A practical application of this algorithm is detecting plagiarism. To know more about Rabin-Karp also go through Searching for Patterns | Set 3 (Rabin-Karp Algorithm). 
+
+Linking File name and path together: 
+
+When moving through files on our local system, we observe two very crucial components of a file i.e. file_name and file_path. In order to store the correspondence between file_name and file_path the system uses a map(file_name, file_path)which is implemented using a hash table. 
+
+Game Boards: In a game like Tic-Tac-Toe or chess the position of the game may be stored using hash table
+
+Graphics: 
+
+The central problem of storage in the graphics storage of objects. For this, data is organized by hashing. It is also used to make a grid of appropriate size. We store the grid in 1D array as we do incase of sparse matrices. All the points stored in one cell will be stored in the same place. If the three points will store in the same entry, it will contain three points. here hash function is used to map the cell grid to the memory location. The key advantage of this method of storage is fast execution of search operation.
+
+Related articles: 
+
+Hashing vs BST 
+Hashing vs Trie 
+Advantages of Applications of Hashing
+Efficiency: Hashing allows for fast lookups, searches, and retrievals of data, with an average time complexity of O(1) for hash table lookups.
+Dynamic: Hashing is a dynamic data structure that can be easily resized, making it suitable for growing and changing datasets.
+Secure: Hashing provides a secure method for storing and retrieving sensitive information, such as passwords, as the original data is transformed into a hash value that is difficult to reverse.
+Simple: Hashing is a simple and straightforward concept, making it easy to implement and understand.
+Scalable: Hashing can be scaled to handle large amounts of data, making it suitable for big data applications.
